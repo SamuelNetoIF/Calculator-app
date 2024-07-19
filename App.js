@@ -24,7 +24,7 @@ const App = () => {
 
   const handleCalculation = () => {
     try {
-      const calculatedResult = math.evaluate(input); // Use math library
+      const calculatedResult = math.evaluate(input);
       setResult(calculatedResult.toString());
     } catch (error) {
       setResult('Erro');
@@ -74,7 +74,7 @@ const App = () => {
           <TouchableOpacity
             key={7}
             style={styles.button}
-            onPress={() => setInput('')} // Clear button
+            onPress={() => setInput('')}
           >
             <Text style={styles.buttonText}>4</Text>
           </TouchableOpacity>
@@ -91,7 +91,7 @@ const App = () => {
           <TouchableOpacity
             key={7}
             style={styles.button}
-            onPress={() => setInput('')} // Clear button
+            onPress={() => setInput('')}
           >
             <Text style={styles.buttonText}>1</Text>
           </TouchableOpacity>
@@ -108,7 +108,7 @@ const App = () => {
           <TouchableOpacity
             key={7}
             style={[styles.button, styles.buttonOp]}
-            onPress={() => setInput('')} // Clear button
+            onPress={() => setInput('')}
           >
             <Text style={[styles.buttonText, styles.buttonOpText]}>C</Text>
           </TouchableOpacity>
@@ -169,7 +169,6 @@ const styles = StyleSheet.create({
     padding: 20,
     margin: 5,
     borderRadius: 5,
-    // paddingHorizontal: 10,
   },
   buttonOp: {
     backgroundColor: '#FFF',
